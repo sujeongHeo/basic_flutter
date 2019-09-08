@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
 }
 class MyAppState extends State<MyApp> {
   bool checkBoxValue = false;
-  String  actionText = "Default";
+  String  actionText = "before change action";
   @override
   Widget build(BuildContext ctxt) {
     return new MaterialApp(
@@ -24,7 +24,7 @@ class MyAppState extends State<MyApp> {
                     icon: new Icon(Icons.add_comment),
                     onPressed: (){
                       setState(() {
-                        actionText = "New Text";
+                        actionText = "push action Add";
                       });
                     }
                 ),
@@ -32,7 +32,7 @@ class MyAppState extends State<MyApp> {
                     icon: new Icon(Icons.remove),
                     onPressed: (){
                       setState(() {
-                        actionText = "Default";
+                        actionText = "remove, same as default";
                       });
                     }
                 ),
